@@ -18,7 +18,7 @@ The following instructions are based on the last version of Ubuntu.
 
 1. Install Ubuntu using "[netinstall](http://archive.ubuntu.com/ubuntu/dists/bionic/main/installer-amd64/current/images/netboot/mini.iso)" with only "OpenSSH Server" option
 2. Install git by `sudo apt install git -y`
-3. Clone this repo like `git clone https://github.com/abacao/Boot2Kodi.git`
+3. Clone this repo like `git clone https://github.com/satdast/Boot2Kodi.git`
 4. `cd Boot2Kodi`
 5. Run the installation script `sudo sh ./install.sh`
 
