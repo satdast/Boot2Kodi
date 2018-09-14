@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # kodi repo add
-apt install software-properties-common -y
-add-apt-repository ppa:team-xbmc/ppa -y
+# apt install software-properties-common -y
+# add-apt-repository ppa:team-xbmc/ppa -y
 
 # update and upgrade
 apt update -y && apt upgrade -y
@@ -33,3 +33,9 @@ systemctl enable kodi
 
 # Start Kodi service
 systemctl start kodi
+
+# config sound
+pacmd list-cards
+pacmd set-card-profile 0 output:hdmi-stereo
+pactl list sinks
+pactl set-sink-formats 0 "pcm; ac3-iec61937; dts-iec61937; eac3-iec61937"
