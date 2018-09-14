@@ -8,7 +8,7 @@
 apt update -y && apt upgrade -y
 
 # install kodi and screen output
-apt install kodi xinit xorg dbus-x11 xserver-xorg-video-intel xserver-xorg-legacy pulseaudio upower -y
+apt install kodi xinit xorg dbus-x11 xserver-xorg-video-intel xserver-xorg-legacy alsa-utils upower -y
 
 # add user
 adduser --disabled-password --disabled-login --gecos "" kodi
@@ -33,9 +33,3 @@ systemctl enable kodi
 
 # Start Kodi service
 systemctl start kodi
-
-# config sound
-# pacmd list-cards
-# pacmd set-card-profile 0 output:hdmi-stereo
-# pactl list sinks
-# pactl set-sink-formats 0 "pcm; ac3-iec61937; dts-iec61937; eac3-iec61937"
