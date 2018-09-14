@@ -35,7 +35,7 @@ systemctl enable kodi
 systemctl start kodi
 
 # config sound
-pacmd list-cards
-pacmd set-card-profile 0 output:hdmi-stereo
-pactl list sinks
-pactl set-sink-formats 0 "pcm; ac3-iec61937; dts-iec61937; eac3-iec61937"
+# pacmd list-cards
+# pacmd set-card-profile 0 output:hdmi-stereo
+# pactl list sinks
+# pactl set-sink-formats 0 "pcm; ac3-iec61937; dts-iec61937; eac3-iec61937"
