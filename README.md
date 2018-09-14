@@ -2,7 +2,7 @@
 #### Installation of Kodi into Openmmediavault:
 
 forked from:
-#### Installation of Kodi into Ubuntu Server:
+## Installation of Kodi into Ubuntu Server:
 
 #### Tested in:
   - [x] 4.1.11
